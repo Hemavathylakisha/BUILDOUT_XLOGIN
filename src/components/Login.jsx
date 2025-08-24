@@ -20,24 +20,26 @@ function Login() {
         }
 
     }
-    
+
   return (
     <div>
       <form onSubmit={handleSubmit}>
         <div>
-        <label>
+        <label  htmlFor="username">
             Username :
             <input type="text" value={username} 
             name="username" 
+            id="username"
             onChange={(e)=> setUsername(e.target.value)}
             required
             />
         </label>
         </div>
         <div>
-         <label>
+         <label  htmlFor="password">
             Password :
             <input type="password" value={password} 
+            id="password"
             name="password"
             onChange={(e)=>setPassword(e.target.value)}
             required
